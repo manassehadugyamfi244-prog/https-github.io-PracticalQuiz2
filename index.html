@@ -7,6 +7,11 @@
     <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
     <style>
         body { margin: 0; overflow: hidden; }
+        /* Hide A-Frame default blue loading screen */
+        .a-loader-title { display: none !important; }
+        .a-loader-container { display: none !important; }
+        [data-a-loader] { display: none !important; }
+        :root [a-scene] .a-loader-container { display: none !important; }
         #ui { position: fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:10; font-family:Georgia,serif; }
         #title { position:absolute; top:18px; left:50%; transform:translateX(-50%); background:rgba(0,0,0,0.72); border:1px solid rgba(212,175,55,0.55); border-radius:4px; padding:9px 26px; color:#D4AF37; font-size:13px; letter-spacing:4px; text-transform:uppercase; backdrop-filter:blur(8px); text-align:center; }
         #title span { display:block; font-size:9px; color:#aaa; letter-spacing:3px; margin-top:3px; }
@@ -18,7 +23,7 @@
 </head>
 <body>
 
-<a-scene shadow="type: pcfsoft" cursor="rayOrigin: mouse" background="color:#87CEEB">
+<a-scene shadow="type: pcfsoft" cursor="rayOrigin: mouse" background="color:#87CEEB" loading-screen="dotsColor:#87CEEB;backgroundColor:#87CEEB">
 
     <a-assets>
         <img id="floor-texture" src="https://cdn.glitch.global/3f392931-e408-466d-979a-e24c233e75e4/wood_floor.jpg?v=1675851235">
