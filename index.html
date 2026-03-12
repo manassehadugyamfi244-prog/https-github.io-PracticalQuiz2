@@ -362,19 +362,19 @@
     <!-- small drink on table -->
     <a-cylinder position="5.9 0.5 10"   radius="0.04" height="0.12" color="#5D2906" material="roughness:0.2"></a-cylinder>
 
-    <!-- ENTRANCE STEPS — 3 wide steps from ground up to room level, each raised cleanly -->
-    <!-- step 1 — lowest, furthest out -->
-    <a-box position="0 0.08 10.8" width="5.0" height="0.16" depth="0.9" color="#d0cfc8" roughness="0.85"></a-box>
+    <!-- ENTRANCE STEPS — flush against room front opening at z=5 -->
+    <!-- landing slab — sits right at room entrance z=5, connects to interior floor -->
+    <a-box position="0 0.10 5.7"  width="5.0" height="0.12" depth="1.4" color="#b5b4ac" roughness="0.85"></a-box>
+    <!-- step 3 — just outside landing -->
+    <a-box position="0 0.08 6.85" width="5.0" height="0.08" depth="0.9" color="#bebdb5" roughness="0.85"></a-box>
     <!-- step 2 -->
-    <a-box position="0 0.22 10.1" width="5.0" height="0.16" depth="0.9" color="#c8c7bf" roughness="0.85"></a-box>
-    <!-- step 3 — highest, closest to entrance -->
-    <a-box position="0 0.36 9.4"  width="5.0" height="0.16" depth="0.9" color="#bebdb5" roughness="0.85"></a-box>
-    <!-- landing slab connecting step 3 to room floor -->
-    <a-box position="0 0.44 8.6"  width="5.0" height="0.14" depth="1.4" color="#b5b4ac" roughness="0.85"></a-box>
-    <!-- step edge highlight strips — gold trim on each step front -->
-    <a-box position="0 0.165 10.35" width="5.0" height="0.03" depth="0.04" color="#D4AF37" material="metalness:0.8;roughness:0.1"></a-box>
-    <a-box position="0 0.305  9.65" width="5.0" height="0.03" depth="0.04" color="#D4AF37" material="metalness:0.8;roughness:0.1"></a-box>
-    <a-box position="0 0.445  8.95" width="5.0" height="0.03" depth="0.04" color="#D4AF37" material="metalness:0.8;roughness:0.1"></a-box>
+    <a-box position="0 0.055 7.65" width="5.0" height="0.06" depth="0.9" color="#c8c7bf" roughness="0.85"></a-box>
+    <!-- step 1 — lowest, furthest from entrance -->
+    <a-box position="0 0.03 8.45" width="5.0" height="0.04" depth="0.9" color="#d0cfc8" roughness="0.85"></a-box>
+    <!-- gold trim on each step front edge -->
+    <a-box position="0 0.125 6.4"  width="5.0" height="0.025" depth="0.04" color="#D4AF37" material="metalness:0.8;roughness:0.1;shader:flat"></a-box>
+    <a-box position="0 0.09  7.2"  width="5.0" height="0.025" depth="0.04" color="#D4AF37" material="metalness:0.8;roughness:0.1;shader:flat"></a-box>
+    <a-box position="0 0.065 8.0"  width="5.0" height="0.025" depth="0.04" color="#D4AF37" material="metalness:0.8;roughness:0.1;shader:flat"></a-box>
 
     <!-- TABLE RELOCATED — placed in right side garden at z=3, x=9 -->
     <a-cylinder position="9 0.45 3"  radius="0.55" height="0.06" color="#1a1a1a" material="metalness:0.7;roughness:0.2"></a-cylinder>
@@ -503,5 +503,3 @@
 </script>
 </body>
 </html>
-
-
