@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A-Frame Practicals</title>
+    <title>Modern Luxury Dining Room - Detailed</title>
     <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
     <style>
         body { margin: 0; overflow: hidden; }
@@ -463,62 +463,26 @@
     </a-entity>
 
     <!-- TABLE ITEMS -->
-    <!-- MILO TIN — tall wide tin with bold name + inscription -->
-    <a-entity position="-0.4 1.04 0.5">
-        <!-- main body — taller and wider -->
-        <a-cylinder radius="0.13" height="0.75" color="#005200" material="roughness:0.3"></a-cylinder>
-        <!-- lid -->
-        <a-cylinder radius="0.136" height="0.05" position="0 0.4 0" color="#003800" material="metalness:0.7;roughness:0.2"></a-cylinder>
-        <!-- lid inner ring -->
-        <a-cylinder radius="0.12" height="0.03" position="0 0.39 0" color="#004400" material="metalness:0.5"></a-cylinder>
-        <!-- base rim -->
-        <a-cylinder radius="0.136" height="0.04" position="0 -0.375 0" color="#003800" material="metalness:0.7;roughness:0.2"></a-cylinder>
-        <!-- label band — bright green stripe -->
-        <a-cylinder radius="0.132" height="0.5" position="0 0.02 0" color="#1a8a00" material="roughness:0.35"></a-cylinder>
-        <!-- bold MILO name — front, large -->
-        <a-text value="MILO" align="center" width="2.6" position="0 0.12 0.135" color="#FFD700" font="exo2bold"></a-text>
-        <!-- bold MILO name — back -->
-        <a-text value="MILO" align="center" width="2.6" position="0 0.12 -0.135" rotation="0 180 0" color="#FFD700" font="exo2bold"></a-text>
-        <!-- inscription line — front -->
-        <a-text value="ENERGY DRINK" align="center" width="1.4" position="0 -0.08 0.135" color="#ccffcc" font="exo2bold"></a-text>
-        <!-- inscription line — back -->
-        <a-text value="ENERGY DRINK" align="center" width="1.4" position="0 -0.08 -0.135" rotation="0 180 0" color="#ccffcc" font="exo2bold"></a-text>
-        <!-- sub inscription — front -->
-        <a-text value="Chocolate Malt" align="center" width="1.1" position="0 -0.2 0.135" color="#aaffaa" font="exo2bold"></a-text>
-        <!-- sub inscription — back -->
-        <a-text value="Chocolate Malt" align="center" width="1.1" position="0 -0.2 -0.135" rotation="0 180 0" color="#aaffaa" font="exo2bold"></a-text>
+    <!-- MILO TIN — short, just the name -->
+    <a-entity position="-0.4 1.19 0.5">
+        <a-cylinder radius="0.1" height="0.3" color="#005200" material="roughness:0.3"></a-cylinder>
+        <a-cylinder radius="0.104" height="0.02" position="0 0.16 0" color="#003800" material="metalness:0.7"></a-cylinder>
+        <a-cylinder radius="0.1" height="0.2" position="0 0 0" color="#1a8a00" material="roughness:0.35"></a-cylinder>
+        <a-text value="MILO" align="center" width="1.8" position="0 0.02 0.105" color="#FFD700" font="exo2bold"></a-text>
     </a-entity>
 
-    <!-- MILK TIN — tall wide tin with bold name + inscription -->
-    <a-entity position="0.4 1.04 0.5">
-        <!-- main body -->
-        <a-cylinder radius="0.13" height="0.75" color="#e8e4d8" material="roughness:0.3"></a-cylinder>
-        <!-- lid -->
-        <a-cylinder radius="0.136" height="0.05" position="0 0.4 0" color="#b0aca0" material="metalness:0.7;roughness:0.2"></a-cylinder>
-        <!-- lid inner ring -->
-        <a-cylinder radius="0.12" height="0.03" position="0 0.39 0" color="#c0bcb0" material="metalness:0.5"></a-cylinder>
-        <!-- base rim -->
-        <a-cylinder radius="0.136" height="0.04" position="0 -0.375 0" color="#b0aca0" material="metalness:0.7;roughness:0.2"></a-cylinder>
-        <!-- label band — clean white stripe -->
-        <a-cylinder radius="0.132" height="0.5" position="0 0.02 0" color="#ffffff" material="roughness:0.2"></a-cylinder>
-        <!-- bold MILK name — front, large -->
-        <a-text value="MILK" align="center" width="2.6" position="0 0.12 0.135" color="#0033cc" font="exo2bold"></a-text>
-        <!-- bold MILK name — back -->
-        <a-text value="MILK" align="center" width="2.6" position="0 0.12 -0.135" rotation="0 180 0" color="#0033cc" font="exo2bold"></a-text>
-        <!-- inscription line — front -->
-        <a-text value="FULL CREAM" align="center" width="1.4" position="0 -0.08 0.135" color="#0055cc" font="exo2bold"></a-text>
-        <!-- inscription line — back -->
-        <a-text value="FULL CREAM" align="center" width="1.4" position="0 -0.08 -0.135" rotation="0 180 0" color="#0055cc" font="exo2bold"></a-text>
-        <!-- sub inscription — front -->
-        <a-text value="Fresh &amp; Pure" align="center" width="1.1" position="0 -0.2 0.135" color="#4488ff" font="exo2bold"></a-text>
-        <!-- sub inscription — back -->
-        <a-text value="Fresh &amp; Pure" align="center" width="1.1" position="0 -0.2 -0.135" rotation="0 180 0" color="#4488ff" font="exo2bold"></a-text>
+    <!-- MILK TIN — short, just the name -->
+    <a-entity position="0.4 1.19 0.5">
+        <a-cylinder radius="0.1" height="0.3" color="#e8e4d8" material="roughness:0.3"></a-cylinder>
+        <a-cylinder radius="0.104" height="0.02" position="0 0.16 0" color="#b0aca0" material="metalness:0.7"></a-cylinder>
+        <a-cylinder radius="0.1" height="0.2" position="0 0 0" color="#ffffff" material="roughness:0.2"></a-cylinder>
+        <a-text value="MILK" align="center" width="1.8" position="0 0.02 0.105" color="#0033cc" font="exo2bold"></a-text>
     </a-entity>
-    <a-entity position="0.6 1.04 -0.3">
+    <a-entity position="0.6 1.13 -0.3">
         <a-cylinder radius="0.08" height="0.18" color="#FF8C00" material="roughness:0.2"></a-cylinder>
         <a-torus radius="0.05" radius-tubular="0.01" arc="180" rotation="0 0 -90" position="0.08 0.02 0" color="#FF8C00"></a-torus>
     </a-entity>
-    <a-entity position="-0.6 1.04 -0.3">
+    <a-entity position="-0.6 1.13 -0.3">
         <a-cylinder radius="0.08" height="0.18" color="#5D2906" material="roughness:0.2"></a-cylinder>
         <a-torus radius="0.05" radius-tubular="0.01" arc="180" rotation="0 0 90" position="-0.08 0.02 0" color="#5D2906"></a-torus>
     </a-entity>
@@ -539,4 +503,3 @@
 </script>
 </body>
 </html>
-
